@@ -1,0 +1,58 @@
+:root {
+  --light: hsl(0, 0%, 80%);
+  --light-50: hsla(0, 0%, 80%, 0.5);
+
+  --dark: hsl(0, 0%, 13%);
+  --dark-50: hsla(0, 0%, 13%, 0.5);
+
+  --lime: hsl(120, 100%, 50%);
+  --lime-50: hsla(120, 100%, 50%, 0.5);
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("./assets/fonts/nunito_sans/NunitoSans_VF.ttf") format("truetype");
+  font-weight: 100 900;
+  font-stretch: 50% 200%;
+}
+
+@font-face {
+  font-family: "Nunito Sans Italic";
+  src: url("./assets/fonts/nunito_sans/NunitoSans_Italic_VF.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-stretch: 50% 200%;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("./assets/fonts/roboto_condensed/RobotoCondensed_VF.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-stretch: 50% 200%;
+}
+
+@font-face {
+  font-family: "Roboto Condensed Italic";
+  src: url("./assets/fonts/roboto_condensed/RobotoCondensed_Italic_VF.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-stretch: 50% 200%;
+  font-style: italic;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: "Roboto Condensed", sans-serif;
+}
