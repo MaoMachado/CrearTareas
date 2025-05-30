@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --repo https://github.com/MaoMachado/CrearTareas"
+    "deploy": "gh-pages -d build --repo https://github.com/MaoMachado/CrearTareas.git"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
