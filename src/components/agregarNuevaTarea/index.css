@@ -1,0 +1,49 @@
+.crear_tarea {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  padding-block: 0.5rem;
+
+  & > h2 {
+    flex: 1;
+    font-weight: normal;
+    text-shadow: 0 0 10px var(--lime-50);
+    text-align: center;
+  }
+
+  & > form {
+    flex: 1;
+    display: flex;
+
+    & > .ipt_tarea {
+      padding: 0.5rem;
+      border: none;
+      outline: 2px solid var(--light-50);
+      border-radius: 0.5rem;
+      background-color: var(--dark);
+      color: var(--light);
+      font-size: 1em;
+      transition: outline 0.1s linear, box-shadow 0.2s linear;
+
+      &:focus {
+        border: none;
+        outline: 2px solid var(--lime-50);
+        box-shadow: 0 0 10px var(--lime-50);
+      }
+    }
+
+    & > .btn_agregar {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 1.8em;
+      transition: transform 0.2s linear;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}

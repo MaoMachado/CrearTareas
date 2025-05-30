@@ -1,0 +1,90 @@
+.tareas_lista {
+  display: flex;
+  row-gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+  inline-size: 100%;
+  min-block-size: 50px;
+  border-block-start: 2.5px dashed var(--lime-50);
+  margin-block: 1rem;
+
+  & > h2 {
+    font-family: "Nunito Sans Italic";
+    font-weight: lighter;
+    color: var(--lime);
+  }
+
+  & > .lista_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    inline-size: 80%;
+
+    & > .tarea_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem;
+      background-color: var(--lime-50);
+      border-radius: 0.5rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--lime);
+        color: var(--dark);
+      }
+
+      & > .info_tarea {
+        display: flex;
+        flex-direction: column;
+
+        & > h2 {
+          font-family: "Nunito Sans";
+        }
+      }
+
+      & > .tarea_btn_container {
+        display: flex;
+        column-gap: 0.5rem;
+
+        & > button {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          border-radius: 0.5rem;
+          transition: background-color 0.1s linear, padding 0.1s ease;
+
+          &:hover {
+            background-color: var(--dark-50);
+            padding: 0.2rem;
+          }
+
+          & > img {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.finalizada {
+  opacity: 0.5;
+  text-decoration: line-through;
+
+  & .btn_editar_tarea {
+    display: none;
+  }
+
+  & .btn_finalizar_tarea {
+    display: none;
+  }
+}
+
+.tareas_lista {
+  display: none;
+
+  &.visible {
+    display: flex;
+  }
+}

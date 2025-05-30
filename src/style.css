@@ -56,3 +56,27 @@ body {
   color: var(--light);
   font-family: "Roboto Condensed", sans-serif;
 }
+
+main {
+  display: grid;
+  place-items: center;
+  inline-size: 100vw;
+  block-size: 100vh;
+  padding: 1rem;
+}
+
+.tareas {
+  inline-size: clamp(280px, 80vw, 500px);
+  min-block-size: 100px;
+  padding: 0.6rem;
+  outline: 2px solid var(--light-50);
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem var(--light-50);
+
+  & > h1 {
+    margin-block-end: 2rem;
+    color: var(--lime);
+    text-align: center;
+    font-size: clamp(1.5em, 5vw, 2em);
+  }
+}
